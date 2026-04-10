@@ -23,7 +23,3 @@ services:
         value: sqlite
       - key: DATABASE_FILENAME
         value: .tmp/data.db
-    disk:
-      name: strapi-data
-      mountPath: /opt/render/project/src/.tmp
-      sizeGB: 1
