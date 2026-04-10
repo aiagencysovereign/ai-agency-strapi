@@ -16,6 +16,12 @@ module.exports = ({ env }) => {
       },
       useNullAsDefault: true,
     },
+    postgres: {
+      connection: {
+        connectionString: env('DATABASE_URL'),
+        ssl: { rejectUnauthorized: false },
+      },
+    },
   };
 
   return {
